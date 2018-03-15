@@ -1,0 +1,16 @@
+{
+  "analyticConfiguration" : {
+    "tenantId" : null,
+    "type" : "COMPUTED_METRIC",
+    "id" : null,
+    "packageId" : null,
+    "name" : "Kubernetes",
+    "scope" : {
+      "elementName" : null,
+      "elementType" : null,
+      "elementTags" : null,
+      "metricMatches" : "^(cpu\\.node_utilization|memory\\.node_utilization).*"
+    },
+    "metrics" : null
+  }
+}

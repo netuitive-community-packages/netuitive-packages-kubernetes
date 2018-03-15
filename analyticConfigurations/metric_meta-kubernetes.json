@@ -1,0 +1,36 @@
+{
+  "analyticConfiguration" : {
+    "tenantId" : null,
+    "type" : "METRIC_META",
+    "id" : null,
+    "packageId" : null,
+    "name" : "Kubernetes",
+    "scope" : {
+      "elementName" : null,
+      "elementType" : null,
+      "elementTags" : null,
+      "metricMatches" : "^(cpu\\.node_utilization|memory\\.node_utilization).*"
+    },
+    "metrics" : [ {
+      "match" : "cpu.node_utilization",
+      "properties" : {
+        "tags" : {
+          "utilization" : true,
+          "unit" : "percent"
+        },
+        "validMax" : 1,
+        "validMin" : 0
+      }
+    }, {
+      "match" : "memory.node_utilization",
+      "properties" : {
+        "tags" : {
+          "utilization" : true,
+          "unit" : "percent"
+        },
+        "validMax" : 1,
+        "validMin" : 0
+      }
+    }]
+  }
+}

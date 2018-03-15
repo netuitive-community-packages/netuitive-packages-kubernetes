@@ -1,0 +1,28 @@
+{
+  "analyticConfiguration" : {
+    "tenantId" : null,
+    "type" : "ACE",
+    "id" : null,
+    "packageId" : null,
+    "name" : "Kubernetes",
+    "scope" : {
+      "elementName" : null,
+      "elementType" : null,
+      "elementTags" : null,
+      "metricMatches" : "^(cpu\\.node_utilization|memory\\.node_utilization).*"
+    },
+    "metrics" : [ {
+      "match" : "cpu.node_utilization",
+      "properties" : {
+        "baseline" : true,
+        "correlation" : true
+      }
+    }, {
+      "match" : "memory.node_utilization",
+      "properties" : {
+        "baseline" : true,
+        "correlation" : true
+      }
+    }]
+  }
+}
