@@ -15,6 +15,10 @@ Using metricly-cli you can install this early release, do the following:
 
 ## Release History
 
+### Version next
+
+* Added Validation via metricly-cli
+
 ### Version 0.1.0
 
 * Initial release of the package for monitoring Kubernetes resources.
