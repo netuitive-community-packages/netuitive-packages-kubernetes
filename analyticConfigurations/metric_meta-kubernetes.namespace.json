@@ -1,0 +1,73 @@
+{
+  "analyticConfiguration" : {
+    "tenantId" : null,
+    "type" : "METRIC_META",
+    "id" : null,
+    "packageId" : null,
+    "name" : "Kubernetes Namespace",
+    "scope" : {
+      "elementName" : null,
+      "elementType" : "Kubernetes Namespace",
+      "elementTags" : null,
+      "metricMatches" : null
+    },
+    "metrics" : [ {
+      "match" : "cpu.limit",
+      "properties" : {
+        "validMin" : 0
+      }
+    }, {
+      "match" : "cpu.request",
+      "properties" : {
+        "validMin" : 0
+      }
+    }, {
+      "match" : "cpu.usage_rate",
+      "properties" : {
+        "validMin" : 0
+      }
+    }, {
+      "match" : "memory.limit",
+      "properties" : {
+        "tags" : {
+          "unit" : "bytes"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "memory.request",
+      "properties" : {
+        "tags" : {
+          "unit" : "bytes"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "memory.usage",
+      "properties" : {
+        "tags" : {
+          "unit" : "bytes"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "k8s.namespace.cpu.usage.percent",
+      "properties" : {
+        "tags" : {
+          "utilization" : true,
+          "unit" : "percent"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "k8s.namespace.memory.usage.percent",
+      "properties" : {
+        "tags" : {
+          "utilization" : true,
+          "unit" : "percent"
+        },
+        "validMin" : 0
+      }
+    } ]
+  }
+}
