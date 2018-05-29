@@ -49,6 +49,24 @@
     }
   }, {
     "data" : {
+      "file" : "analyticConfigurations/ace-kubernetes.pod.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "analyticConfigurations/ace-kubernetes.pod-container.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "analyticConfigurations/ace-kubernetes.sys-container.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
       "file" : "analyticConfigurations/computed_metric-kubernetes.cluster.json",
       "encoding" : "application/json",
       "content" : null
@@ -74,6 +92,24 @@
   }, {
     "data" : {
       "file" : "analyticConfigurations/metric_meta-kubernetes.node.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "analyticConfigurations/metric_meta-kubernetes.pod.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "analyticConfigurations/metric_meta-kubernetes.pod-container.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "analyticConfigurations/metric_meta-kubernetes.sys-container.json",
       "encoding" : "application/json",
       "content" : null
     }

@@ -1,0 +1,177 @@
+{
+  "analyticConfiguration" : {
+    "tenantId" : null,
+    "type" : "METRIC_META",
+    "id" : null,
+    "packageId" : null,
+    "name" : "Kubernetes Pod Container",
+    "scope" : {
+      "elementName" : null,
+      "elementType" : "Kubernetes Pod Container",
+      "elementTags" : null,
+      "metricMatches" : null
+    },
+    "metrics" : [ {
+      "match" : "cpu.limit",
+      "properties" : {
+        "validMin" : 0
+      }
+    }, {
+      "match" : "cpu.request",
+      "properties" : {
+        "validMin" : 0
+      }
+    }, {
+      "match" : "cpu.usage",
+      "properties" : {
+        "type" : "COUNTER",
+        "validMin" : 0
+      }
+    }, {
+      "match" : "cpu.usage_rate",
+      "properties" : {
+        "validMin" : 0
+      }
+    }, {
+      "match" : "memory.cache",
+      "properties" : {
+        "tags" : {
+          "unit" : "bytes"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "memory.limit",
+      "properties" : {
+        "tags" : {
+          "unit" : "bytes"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "memory.major_page_faults",
+      "properties" : {
+        "type" : "COUNTER",
+        "validMin" : 0
+      }
+    }, {
+      "match" : "memory.major_page_faults_rate",
+      "properties" : {
+        "validMin" : 0
+      }
+    }, {
+      "match" : "memory.page_faults",
+      "properties" : {
+        "type" : "COUNTER",
+        "validMin" : 0
+      }
+    }, {
+      "match" : "memory.page_faults_rate",
+      "properties" : {
+        "validMin" : 0
+      }
+    }, {
+      "match" : "memory.request",
+      "properties" : {
+        "tags" : {
+          "unit" : "bytes"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "memory.rss",
+      "properties" : {
+        "tags" : {
+          "unit" : "bytes"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "memory.usage",
+      "properties" : {
+        "tags" : {
+          "unit" : "bytes"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "memory.working_set",
+      "properties" : {
+        "tags" : {
+          "unit" : "bytes"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "disk.io_read_bytes.*",
+      "properties" : {
+        "type" : "COUNTER",
+        "tags" : {
+          "unit" : "bytes"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "disk.io_read_bytes_rate.*",
+      "properties" : {
+        "tags" : {
+          "unit" : "bytes"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "disk.io_write_bytes.*",
+      "properties" : {
+        "type" : "COUNTER",
+        "tags" : {
+          "unit" : "bytes"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "disk.io_write_bytes_rate.*",
+      "properties" : {
+        "tags" : {
+          "unit" : "bytes"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "filesystem.available.*",
+      "properties" : {
+        "tags" : {
+          "unit" : "bytes"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "filesystem.limit.*",
+      "properties" : {
+        "tags" : {
+          "unit" : "bytes"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "filesystem.usage.*",
+      "properties" : {
+        "tags" : {
+          "unit" : "bytes"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "uptime",
+      "properties" : {
+        "type" : "COUNTER",
+        "validMin" : 0
+      }
+    }, {
+      "match" : "restart_count",
+      "properties" : {
+        "type" : "COUNTER",
+        "validMin" : 0
+      }
+    } ]
+  }
+}
