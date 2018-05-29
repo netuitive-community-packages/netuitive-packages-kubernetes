@@ -18,13 +18,49 @@
   },
   "policies" : [ {
     "data" : {
-      "file" : "policies/kubernetes.-.elevated.node.memory.usage.json",
+      "file" : "policies/kubernetes.node.-.elevated.cpu.utilization.json",
       "encoding" : "application/json",
       "content" : null
     }
   }, {
     "data" : {
-      "file" : "policies/kubernetes.-.elevated.node.cpu.usage.json",
+      "file" : "policies/kubernetes.node.-.elevated.memory.utilization.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "policies/kubernetes.pod.-.frequent.restarts.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "policies/kubernetes.pod.-.elevated.network.errors.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "policies/kubernetes.cluster.-.elevated.memory.utilization.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "policies/kubernetes.cluster.-.elevated.cpu.utilization.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "policies/kubernetes.namespace.-.elevated.memory.utilization.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "policies/kubernetes.namespace.-.elevated.cpu.utilization.json",
       "encoding" : "application/json",
       "content" : null
     }
