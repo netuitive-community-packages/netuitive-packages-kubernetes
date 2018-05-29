@@ -100,7 +100,7 @@
       "created" : "2016-03-11T02:17:52Z",
       "updated" : "2016-03-11T02:17:52Z"
     } ],
-    "type" : "Kubernetes Pod Container",
+    "type" : "KUBERNETES POD CONTAINER",
     "private" : false
   }
 }
