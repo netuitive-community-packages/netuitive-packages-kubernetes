@@ -116,7 +116,43 @@
   } ],
   "dashboards" : [ {
     "data" : {
-      "file" : "dashboards/kubernetes.summary.json",
+      "file" : "dashboards/kubernetes.overview.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "dashboards/kubernetes.cluster.element.detail.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "dashboards/kubernetes.namespace.element.detail.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "dashboards/kubernetes.node.element.detail.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "dashboards/kubernetes.pod.element.detail.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "dashboards/kubernetes.pod-container.element.detail.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "dashboards/kubernetes.sys-container.element.detail.json",
       "encoding" : "application/json",
       "content" : null
     }
