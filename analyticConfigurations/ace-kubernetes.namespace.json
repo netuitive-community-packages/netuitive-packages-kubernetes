@@ -48,13 +48,13 @@
         "correlation" : false
       }
     }, {
-      "match" : "k8s.cluster.cpu.usage.percent",
+      "match" : "k8s.namespace.cpu.usage.percent",
       "properties" : {
         "baseline" : true,
         "correlation" : true
       }
     }, {
-      "match" : "k8s.cluster.memory.usage.percent",
+      "match" : "k8s.namespace.memory.usage.percent",
       "properties" : {
         "baseline" : true,
         "correlation" : true

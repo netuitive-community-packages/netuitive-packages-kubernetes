@@ -85,7 +85,7 @@
         "selectedAttributes" : "[]",
         "elementScopeTags" : "[]",
         "useElementNameContains" : "true",
-        "element_id" : "a3915a25-0d84-31e4-81c4-6163bd186952",
+        "element_id" : null,
         "elementScopeTypes" : "[]",
         "metricLimit" : "10",
         "metricAggs" : "[]",
