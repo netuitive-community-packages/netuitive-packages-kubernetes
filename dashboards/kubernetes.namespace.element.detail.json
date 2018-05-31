@@ -6,7 +6,7 @@
     "properties" : {
       "timeRangeDuration" : "3600",
       "costOnly" : "false",
-      "gridstackContents" : "[{\"id\":\"a6949491-3f8d-4d99-8b7f-58fbe886de85\",\"x\":0,\"y\":0,\"width\":12,\"height\":8},{\"id\":\"bf91921c-c975-4a1d-9d32-2090bf1939a3\",\"x\":0,\"y\":8,\"width\":12,\"height\":8},{\"id\":\"5f3534fb-4538-4847-8ff0-229fb4ea809b\",\"x\":0,\"y\":16,\"width\":12,\"height\":8}]]",
+      "gridstackContents" : "[{\"id\":\"a6949491-3f8d-4d99-8b7f-58fbe886de85\",\"x\":0,\"y\":0,\"width\":12,\"height\":8},{\"id\":\"bf91921c-c975-4a1d-9d32-2090bf1939a3\",\"x\":0,\"y\":8,\"width\":12,\"height\":8},{\"id\":\"5f3534fb-4538-4847-8ff0-229fb4ea809b\",\"x\":0,\"y\":16,\"width\":12,\"height\":8}]",
       "refreshIntervalSeconds" : "300",
       "globalFilter" : "false",
       "wrap" : "true"
