@@ -1,6 +1,6 @@
 {
   "id" : "netuitive.packages.kubernetes",
-  "version" : "0.1.0",
+  "version" : "0.2.0",
   "manifest" : {
     "name" : "Netuitive Packages Kubernetes",
     "description" : "A set of Netuitive analytics configurations, polices, dashboards, and reports that are used to monitor performance of Kubernetes including but not limited to Namespaces, Pods and Nodes.",
@@ -12,45 +12,183 @@
       "logo" : "http://assets.app.netuitive.com/pkg/logo/netuitive/banner_logo.png",
       "download" : "https://github.com/netuitive-community-packages/netuitive-packages-kubernetes/archive/master.zip"
     },
-    "compatibility" : [ "KUBERNETES", "CUSTOM"],
+    "compatibility" : [ "KUBERNETES" ],
     "tags" : [ ],
     "checksum" : null
   },
   "policies" : [ {
     "data" : {
-      "file" : "policies/kubernetes.-.elevated.node.memory.usage.json",
+      "file" : "policies/kubernetes.node.-.elevated.cpu.utilization.json",
       "encoding" : "application/json",
       "content" : null
     }
   }, {
     "data" : {
-      "file" : "policies/kubernetes.-.elevated.node.cpu.usage.json",
+      "file" : "policies/kubernetes.node.-.elevated.memory.utilization.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "policies/kubernetes.pod.-.frequent.restarts.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "policies/kubernetes.pod.-.elevated.network.errors.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "policies/kubernetes.cluster.-.elevated.memory.utilization.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "policies/kubernetes.cluster.-.elevated.cpu.utilization.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "policies/kubernetes.namespace.-.elevated.memory.utilization.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "policies/kubernetes.namespace.-.elevated.cpu.utilization.json",
       "encoding" : "application/json",
       "content" : null
     }
   } ],
   "analyticConfigurations" : [ {
     "data" : {
-      "file" : "analyticConfigurations/ace-kubernetes.json",
+      "file" : "analyticConfigurations/ace-kubernetes.cluster.json",
       "encoding" : "application/json",
       "content" : null
     }
   }, {
     "data" : {
-      "file" : "analyticConfigurations/computed_metric-kubernetes.json",
+      "file" : "analyticConfigurations/ace-kubernetes.namespace.json",
       "encoding" : "application/json",
       "content" : null
     }
   }, {
     "data" : {
-      "file" : "analyticConfigurations/metric_meta-kubernetes.json",
+      "file" : "analyticConfigurations/ace-kubernetes.node.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "analyticConfigurations/ace-kubernetes.pod.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "analyticConfigurations/ace-kubernetes.pod-container.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "analyticConfigurations/ace-kubernetes.sys-container.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "analyticConfigurations/computed_metric-kubernetes.cluster.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "analyticConfigurations/computed_metric-kubernetes.namespace.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "analyticConfigurations/metric_meta-kubernetes.cluster.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "analyticConfigurations/metric_meta-kubernetes.namespace.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "analyticConfigurations/metric_meta-kubernetes.node.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "analyticConfigurations/metric_meta-kubernetes.pod.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "analyticConfigurations/metric_meta-kubernetes.pod-container.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "analyticConfigurations/metric_meta-kubernetes.sys-container.json",
       "encoding" : "application/json",
       "content" : null
     }
   } ],
   "dashboards" : [ {
     "data" : {
-      "file" : "dashboards/kubernetes.summary.json",
+      "file" : "dashboards/kubernetes.overview.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "dashboards/kubernetes.cluster.element.detail.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "dashboards/kubernetes.namespace.element.detail.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "dashboards/kubernetes.node.element.detail.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "dashboards/kubernetes.pod.element.detail.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "dashboards/kubernetes.pod-container.element.detail.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "dashboards/kubernetes.sys-container.element.detail.json",
       "encoding" : "application/json",
       "content" : null
     }

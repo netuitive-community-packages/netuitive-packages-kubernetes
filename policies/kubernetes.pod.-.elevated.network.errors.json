@@ -1,0 +1,50 @@
+{
+  "policy" : {
+    "name" : "Kubernetes Pod - Elevated Network Errors",
+    "description" : null,
+    "scope" : {
+      "elementName" : null,
+      "elementNameExclude" : null,
+      "fqnIncludes" : [ ],
+      "fqnExcludes" : [ ],
+      "elementType" : null,
+      "elementTypes" : [ "Kubernetes Pod" ],
+      "elementTags" : [ ],
+      "elementTagsAll" : true,
+      "excludedElementTags" : [ ],
+      "elementAttributes" : [ ],
+      "elementAttributesAll" : true,
+      "excludedElementAttributes" : [ ]
+    },
+    "duration" : 600,
+    "conditions" : [ {
+      "metric" : null,
+      "wildcard" : "network.*errors_rate",
+      "metricScopeTags" : { },
+      "analytic" : "baselineDeviation",
+      "operator" : ">",
+      "level" : null,
+      "level2" : null,
+      "metricThresholdLevel" : null,
+      "metricThresholdAnalytic" : null
+    }, {
+      "metric" : null,
+      "wildcard" : "network.*errors_rate",
+      "metricScopeTags" : { },
+      "analytic" : "actual",
+      "operator" : ">",
+      "level" : 60.0,
+      "level2" : null,
+      "metricThresholdLevel" : null,
+      "metricThresholdAnalytic" : null
+    } ],
+    "eventConditions" : [ ],
+    "checkCondition" : null,
+    "actions" : [ {
+      "type" : "event",
+      "category" : 2
+    } ],
+    "enabled" : true,
+    "deleted" : false
+  }
+}
