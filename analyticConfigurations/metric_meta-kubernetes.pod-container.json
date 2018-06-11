@@ -24,6 +24,9 @@
     }, {
       "match" : "cpu.usage",
       "properties" : {
+        "tags" : {
+          "unit" : "ns"
+        },
         "type" : "COUNTER",
         "validMin" : 0
       }

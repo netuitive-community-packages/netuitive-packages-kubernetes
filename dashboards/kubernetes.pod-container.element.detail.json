@@ -70,7 +70,7 @@
         "useAllElementScopeAttributes" : "true",
         "categories" : "[]",
         "metricAgg" : "avg",
-        "metrics" : "[{\"fqn\":\"cpu.usage\",\"useRegex\":false,\"aggFns\":[\"avg\"],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+        "metrics" : "[{\"fqn\":\"cpu.usage\",\"useRegex\":false,\"aggFns\":[],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
         "topNLimit" : "5",
         "elementScopeExcludedTags" : "[]"
       }
