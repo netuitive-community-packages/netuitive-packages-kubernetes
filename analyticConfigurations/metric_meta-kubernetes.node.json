@@ -24,7 +24,9 @@
     }, {
       "match" : "cpu.usage",
       "properties" : {
-        "type" : "COUNTER",
+        "tags" : {
+          "unit" : "ns"
+        },
         "validMin" : 0
       }
     }, {
@@ -258,6 +260,24 @@
       "properties" : {
         "tags" : {
           "unit" : "bytes"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "cpu.usage.percent",
+      "properties" : {
+        "tags" : {
+          "utilization" : true,
+          "unit" : "percent"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "memory.usage.percent",
+      "properties" : {
+        "tags" : {
+          "utilization" : true,
+          "unit" : "percent"
         },
         "validMin" : 0
       }

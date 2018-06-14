@@ -39,7 +39,7 @@
         "groupByPolicy" : "false",
         "useAllElementScopeAttributes" : "true",
         "metricAgg" : "avg",
-        "metrics" : "[{\"fqn\":\"k8s.namespace.memory.usage.percent\",\"useRegex\":false,\"aggFns\":[],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+        "metrics" : "[{\"fqn\":\"memory.usage.percent\",\"useRegex\":false,\"aggFns\":[],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
         "topNLimit" : "5",
         "elementScopeExcludedTags" : "[]"
       }
@@ -71,7 +71,7 @@
         "groupByPolicy" : "false",
         "useAllElementScopeAttributes" : "true",
         "metricAgg" : "avg",
-        "metrics" : "[{\"fqn\":\"k8s.namespace.cpu.usage.percent\",\"useRegex\":false,\"aggFns\":[],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+        "metrics" : "[{\"fqn\":\"cpu.usage.percent\",\"useRegex\":false,\"aggFns\":[],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
         "topNLimit" : "5",
         "elementScopeExcludedTags" : "[]"
       }

@@ -18,7 +18,7 @@
     },
     "duration" : 600,
     "conditions" : [ {
-      "metric" : "k8s.cluster.cpu.usage.percent",
+      "metric" : "cpu.usage.percent",
       "wildcard" : null,
       "metricScopeTags" : { },
       "analytic" : "baselineDeviation",
@@ -28,7 +28,7 @@
       "metricThresholdLevel" : null,
       "metricThresholdAnalytic" : null
     }, {
-      "metric" : "k8s.cluster.cpu.usage.percent",
+      "metric" : "cpu.usage.percent",
       "wildcard" : null,
       "metricScopeTags" : { },
       "analytic" : "actual",

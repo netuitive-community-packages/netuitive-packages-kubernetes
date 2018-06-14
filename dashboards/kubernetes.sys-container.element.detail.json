@@ -13,7 +13,7 @@
     },
     "widgets" : [ {
       "id" : "595478ed-8721-4be5-8d21-2d09954f4e5f",
-      "name" : "CPU Usage",
+      "name" : "CPU Usage Percent",
       "description" : null,
       "widgetType" : "multi-metric",
       "properties" : {
@@ -38,7 +38,7 @@
         "useAllElementScopeAttributes" : "true",
         "categories" : "[]",
         "metricAgg" : "avg",
-        "metrics" : "[{\"fqn\":\"cpu.usage\",\"useRegex\":false,\"aggFns\":[],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
+        "metrics" : "[{\"fqn\":\"cpu.usage.percent\",\"useRegex\":false,\"aggFns\":[],\"aggFn\":null,\"groupAggFn\":null,\"aggregationGroups\":[]}]",
         "topNLimit" : "5",
         "elementScopeExcludedTags" : "[]"
       }

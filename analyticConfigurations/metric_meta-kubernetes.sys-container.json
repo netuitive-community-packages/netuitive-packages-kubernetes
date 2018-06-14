@@ -17,7 +17,6 @@
         "tags" : {
           "unit" : "ns"
         },
-        "type" : "COUNTER",
         "validMin" : 0
       }
     }, {
@@ -117,6 +116,24 @@
       "match" : "uptime",
       "properties" : {
         "type" : "COUNTER",
+        "validMin" : 0
+      }
+    }, {
+      "match" : "cpu.usage.percent",
+      "properties" : {
+        "tags" : {
+          "utilization" : true,
+          "unit" : "percent"
+        },
+        "validMin" : 0
+      }
+    }, {
+      "match" : "memory.usage.percent",
+      "properties" : {
+        "tags" : {
+          "utilization" : true,
+          "unit" : "percent"
+        },
         "validMin" : 0
       }
     } ]
