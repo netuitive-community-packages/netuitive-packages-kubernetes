@@ -47,18 +47,6 @@
         "baseline" : true,
         "correlation" : false
       }
-    }, {
-      "match" : "k8s.cluster.cpu.usage.percent",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "k8s.cluster.memory.usage.percent",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
     } ]
   }
 }

@@ -51,7 +51,7 @@
         "validMin" : 0
       }
     }, {
-      "match" : "k8s.cluster.cpu.usage.percent",
+      "match" : "cpu.usage.percent",
       "properties" : {
         "tags" : {
           "utilization" : true,
@@ -60,7 +60,7 @@
         "validMin" : 0
       }
     }, {
-      "match" : "k8s.cluster.memory.usage.percent",
+      "match" : "memory.usage.percent",
       "properties" : {
         "tags" : {
           "utilization" : true,
