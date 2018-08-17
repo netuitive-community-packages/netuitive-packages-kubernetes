@@ -1,52 +1,53 @@
 {
-  "analyticConfiguration" : {
-    "tenantId" : null,
-    "type" : "ACE",
-    "id" : null,
-    "packageId" : null,
-    "name" : "Kubernetes Namespace",
-    "scope" : {
-      "elementName" : null,
-      "elementType" : "Kubernetes Namespace",
-      "elementTags" : null,
-      "metricMatches" : null
+  "analyticConfiguration": {
+    "metrics": [
+      {
+        "match": "cpu.limit",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "cpu.request",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "cpu.usage_rate",
+        "properties": {
+          "baseline": true,
+          "correlation": false
+        }
+      },
+      {
+        "match": "memory.limit",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "memory.request",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "memory.usage",
+        "properties": {
+          "baseline": true,
+          "correlation": false
+        }
+      }
+    ],
+    "name": "Kubernetes Namespace",
+    "scope": {
+      "elementType": "Kubernetes Namespace"
     },
-    "metrics" : [ {
-      "match" : "cpu.limit",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "cpu.request",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "cpu.usage_rate",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : false
-      }
-    }, {
-      "match" : "memory.limit",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "memory.request",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "memory.usage",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : false
-      }
-    } ]
+    "type": "ACE"
   }
 }

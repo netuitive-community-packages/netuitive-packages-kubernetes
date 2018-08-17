@@ -1,232 +1,263 @@
 {
-  "analyticConfiguration" : {
-    "tenantId" : null,
-    "type" : "ACE",
-    "id" : null,
-    "packageId" : null,
-    "name" : "Kubernetes Node",
-    "scope" : {
-      "elementName" : null,
-      "elementType" : "Kubernetes Node",
-      "elementTags" : null,
-      "metricMatches" : null
+  "analyticConfiguration": {
+    "metrics": [
+      {
+        "match": "cpu.limit",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "cpu.request",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "cpu.usage",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "cpu.node_allocatable",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "cpu.node_capacity",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "cpu.node_reservation",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "cpu.node_utilization",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "memory.cache",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "memory.limit",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "memory.major_page_faults",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "memory.node_allocatable",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "memory.node_capacity",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "memory.node_reservation",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "memory.node_utilization",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "memory.page_faults",
+        "properties": {
+          "baseline": true,
+          "correlation": false
+        }
+      },
+      {
+        "match": "memory.request",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "memory.rss",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "memory.usage",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "memory.working_set",
+        "properties": {
+          "baseline": true,
+          "correlation": false
+        }
+      },
+      {
+        "match": "network.rx",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "network.rx_rate",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "network.rx_errors",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "network.rx_errors_rate",
+        "properties": {
+          "baseline": true,
+          "correlation": false
+        }
+      },
+      {
+        "match": "network.tx",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "network.tx_rate",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "network.tx_errors",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "network.tx_errors_rate",
+        "properties": {
+          "baseline": true,
+          "correlation": false
+        }
+      },
+      {
+        "match": "disk.io_read_bytes.*",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "disk.io_read_bytes_rate.*",
+        "properties": {
+          "baseline": true,
+          "correlation": false
+        }
+      },
+      {
+        "match": "disk.io_write_bytes.*",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "disk.io_write_bytes_rate.*",
+        "properties": {
+          "baseline": true,
+          "correlation": false
+        }
+      },
+      {
+        "match": "filesystem.available.*",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "filesystem.inodes.*",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "filesystem.inodes_free.*",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "filesystem.limit.*",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "filesystem.usage.*",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      }
+    ],
+    "name": "Kubernetes Node",
+    "scope": {
+      "elementType": "Kubernetes Node"
     },
-    "metrics" : [ {
-      "match" : "cpu.limit",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "cpu.request",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "cpu.usage",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "cpu.node_allocatable",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "cpu.node_capacity",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "cpu.node_reservation",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "cpu.node_utilization",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "memory.cache",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "memory.limit",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "memory.major_page_faults",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "memory.node_allocatable",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "memory.node_capacity",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "memory.node_reservation",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "memory.node_utilization",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "memory.page_faults",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : false
-      }
-    }, {
-      "match" : "memory.request",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "memory.rss",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "memory.usage",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "memory.working_set",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : false
-      }
-    }, {
-      "match" : "network.rx",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "network.rx_rate",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "network.rx_errors",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "network.rx_errors_rate",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : false
-      }
-    }, {
-      "match" : "network.tx",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "network.tx_rate",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "network.tx_errors",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "network.tx_errors_rate",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : false
-      }
-    }, {
-      "match" : "disk.io_read_bytes.*",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "disk.io_read_bytes_rate.*",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : false
-      }
-    }, {
-      "match" : "disk.io_write_bytes.*",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "disk.io_write_bytes_rate.*",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : false
-      }
-    }, {
-      "match" : "filesystem.available.*",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "filesystem.inodes.*",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "filesystem.inodes_free.*",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "filesystem.limit.*",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "filesystem.usage.*",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    } ]
+    "type": "ACE"
   }
 }

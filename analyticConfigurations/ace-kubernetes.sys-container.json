@@ -1,106 +1,116 @@
 {
-  "analyticConfiguration" : {
-    "tenantId" : null,
-    "type" : "ACE",
-    "id" : null,
-    "packageId" : null,
-    "name" : "Kubernetes Sys Container",
-    "scope" : {
-      "elementName" : null,
-      "elementType" : "Kubernetes Sys Container",
-      "elementTags" : null,
-      "metricMatches" : null
+  "analyticConfiguration": {
+    "metrics": [
+      {
+        "match": "cpu.usage",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "cpu.usage_rate",
+        "properties": {
+          "baseline": true,
+          "correlation": false
+        }
+      },
+      {
+        "match": "memory.cache",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "memory.major_page_faults",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "memory.major_page_faults_rate",
+        "properties": {
+          "baseline": true,
+          "correlation": false
+        }
+      },
+      {
+        "match": "memory.page_faults",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "memory.page_faults_rate",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "memory.rss",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "memory.usage",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "memory.working_set",
+        "properties": {
+          "baseline": true,
+          "correlation": false
+        }
+      },
+      {
+        "match": "disk.io_read_bytes.*",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "disk.io_read_bytes_rate.*",
+        "properties": {
+          "baseline": true,
+          "correlation": false
+        }
+      },
+      {
+        "match": "disk.io_write_bytes.*",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      },
+      {
+        "match": "disk.io_write_bytes_rate.*",
+        "properties": {
+          "baseline": true,
+          "correlation": false
+        }
+      },
+      {
+        "match": "uptime",
+        "properties": {
+          "baseline": false,
+          "correlation": false
+        }
+      }
+    ],
+    "name": "Kubernetes Sys Container",
+    "scope": {
+      "elementType": "Kubernetes Sys Container"
     },
-    "metrics" : [ {
-      "match" : "cpu.usage",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "cpu.usage_rate",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : false
-      }
-    }, {
-      "match" : "memory.cache",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "memory.major_page_faults",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "memory.major_page_faults_rate",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : false
-      }
-    }, {
-      "match" : "memory.page_faults",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "memory.page_faults_rate",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "memory.rss",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "memory.usage",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "memory.working_set",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : false
-      }
-    }, {
-      "match" : "disk.io_read_bytes.*",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "disk.io_read_bytes_rate.*",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : false
-      }
-    }, {
-      "match" : "disk.io_write_bytes.*",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    }, {
-      "match" : "disk.io_write_bytes_rate.*",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : false
-      }
-    }, {
-      "match" : "uptime",
-      "properties" : {
-        "baseline" : false,
-        "correlation" : false
-      }
-    } ]
+    "type": "ACE"
   }
 }

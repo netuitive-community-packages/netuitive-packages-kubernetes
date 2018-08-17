@@ -1,73 +1,76 @@
 {
-  "analyticConfiguration" : {
-    "tenantId" : null,
-    "type" : "METRIC_META",
-    "id" : null,
-    "packageId" : null,
-    "name" : "Kubernetes Cluster",
-    "scope" : {
-      "elementName" : null,
-      "elementType" : "Kubernetes Cluster",
-      "elementTags" : null,
-      "metricMatches" : null
+  "analyticConfiguration": {
+    "metrics": [
+      {
+        "match": "cpu.limit",
+        "properties": {
+          "validMin": 0
+        }
+      },
+      {
+        "match": "cpu.request",
+        "properties": {
+          "validMin": 0
+        }
+      },
+      {
+        "match": "cpu.usage_rate",
+        "properties": {
+          "validMin": 0
+        }
+      },
+      {
+        "match": "memory.limit",
+        "properties": {
+          "tags": {
+            "unit": "bytes"
+          },
+          "validMin": 0
+        }
+      },
+      {
+        "match": "memory.request",
+        "properties": {
+          "tags": {
+            "unit": "bytes"
+          },
+          "validMin": 0
+        }
+      },
+      {
+        "match": "memory.usage",
+        "properties": {
+          "tags": {
+            "unit": "bytes"
+          },
+          "validMin": 0
+        }
+      },
+      {
+        "match": "cpu.usage.percent",
+        "properties": {
+          "tags": {
+            "unit": "percent",
+            "utilization": true
+          },
+          "validMin": 0
+        }
+      },
+      {
+        "match": "memory.usage.percent",
+        "properties": {
+          "tags": {
+            "unit": "percent",
+            "utilization": true
+          },
+          "validMin": 0
+        }
+      }
+    ],
+    "name": "Kubernetes Cluster",
+    "scope": {
+      "elementType": "Kubernetes Cluster"
     },
-    "metrics" : [ {
-      "match" : "cpu.limit",
-      "properties" : {
-        "validMin" : 0
-      }
-    }, {
-      "match" : "cpu.request",
-      "properties" : {
-        "validMin" : 0
-      }
-    }, {
-      "match" : "cpu.usage_rate",
-      "properties" : {
-        "validMin" : 0
-      }
-    }, {
-      "match" : "memory.limit",
-      "properties" : {
-        "tags" : {
-          "unit" : "bytes"
-        },
-        "validMin" : 0
-      }
-    }, {
-      "match" : "memory.request",
-      "properties" : {
-        "tags" : {
-          "unit" : "bytes"
-        },
-        "validMin" : 0
-      }
-    }, {
-      "match" : "memory.usage",
-      "properties" : {
-        "tags" : {
-          "unit" : "bytes"
-        },
-        "validMin" : 0
-      }
-    }, {
-      "match" : "cpu.usage.percent",
-      "properties" : {
-        "tags" : {
-          "utilization" : true,
-          "unit" : "percent"
-        },
-        "validMin" : 0
-      }
-    }, {
-      "match" : "memory.usage.percent",
-      "properties" : {
-        "tags" : {
-          "utilization" : true,
-          "unit" : "percent"
-        },
-        "validMin" : 0
-      }
-    } ]
+    "type": "METRIC_META"
   }
 }

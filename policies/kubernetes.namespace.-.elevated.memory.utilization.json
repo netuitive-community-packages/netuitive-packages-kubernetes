@@ -1,50 +1,35 @@
 {
-  "policy" : {
-    "name" : "Kubernetes Namespace - Elevated Memory Utilization",
-    "description" : "This namespace has a higher than normal memory utilization.",
-    "scope" : {
-      "elementName" : null,
-      "elementNameExclude" : null,
-      "fqnIncludes" : [ ],
-      "fqnExcludes" : [ ],
-      "elementType" : null,
-      "elementTypes" : [ "Kubernetes Namespace" ],
-      "elementTags" : [ ],
-      "elementTagsAll" : true,
-      "excludedElementTags" : [ ],
-      "elementAttributes" : [ ],
-      "elementAttributesAll" : true,
-      "excludedElementAttributes" : [ ]
-    },
-    "duration" : 600,
-    "conditions" : [ {
-      "metric" : "memory.usage.percent",
-      "wildcard" : null,
-      "metricScopeTags" : { },
-      "analytic" : "baselineDeviation",
-      "operator" : ">",
-      "level" : null,
-      "level2" : null,
-      "metricThresholdLevel" : null,
-      "metricThresholdAnalytic" : null
-    }, {
-      "metric" : "memory.usage.percent",
-      "wildcard" : null,
-      "metricScopeTags" : { },
-      "analytic" : "actual",
-      "operator" : ">",
-      "level" : 90.0,
-      "level2" : null,
-      "metricThresholdLevel" : null,
-      "metricThresholdAnalytic" : null
-    } ],
-    "eventConditions" : [ ],
-    "checkCondition" : null,
-    "actions" : [ {
-      "type" : "event",
-      "category" : 2
-    } ],
-    "enabled" : true,
-    "deleted" : false
+  "policy": {
+    "actions": [
+      {
+        "category": 2,
+        "type": "event"
+      }
+    ],
+    "conditions": [
+      {
+        "analytic": "baselineDeviation",
+        "metric": "memory.usage.percent",
+        "operator": ">"
+      },
+      {
+        "analytic": "actual",
+        "level": 90,
+        "metric": "memory.usage.percent",
+        "operator": ">"
+      }
+    ],
+    "deleted": false,
+    "description": "This namespace has a higher than normal memory utilization.",
+    "duration": 600,
+    "enabled": true,
+    "name": "Kubernetes Namespace - Elevated Memory Utilization",
+    "scope": {
+      "elementAttributesAll": true,
+      "elementTagsAll": true,
+      "elementTypes": [
+        "Kubernetes Namespace"
+      ]
+    }
   }
 }
